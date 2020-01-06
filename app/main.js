@@ -1,6 +1,7 @@
 const {TimelineDataSeries, TimelineGraphView} = require('webrtc-internals');
 
-const graphView = new TimelineGraphView('graph-div', 'graph-canvas');
+const grap = document.getElementById('graph')
+const graphView = new TimelineGraphView(graph);
 
 const dataSeries = new TimelineDataSeries();
 graphView.addDataSeries(dataSeries);
